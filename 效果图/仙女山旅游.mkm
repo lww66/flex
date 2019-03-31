@@ -1,0 +1,20 @@
+<MKM version="2.0" imageFileUrl="file:///C:/Users/Administrator/Desktop/lww/flex%20project/%e6%95%88%e6%9e%9c%e5%9b%be/%e4%bb%99%e5%a5%b3%e5%b1%b1%e6%97%85%e6%b8%b8.png">
+  <Marks>
+    <LengthMark x="630" y="155" color="16711680" length="640" direction="12"/>
+    <LengthMark x="661" y="126" color="16711680" length="10" direction="3"/>
+    <ColorMark x="771" y="129" color="16711680" offsetX="25" offsetY="10" defaultDirection="9" colorSystem="hex"/>
+    <LengthMark x="644" y="142" color="16711680" length="80" direction="3"/>
+    <ColorMark x="1251" y="195" color="16711680" offsetX="25" offsetY="10" defaultDirection="9" colorSystem="hex"/>
+    <LengthMark x="839" y="135" color="16711680" length="8" direction="3"/>
+    <LengthMark x="646" y="452" color="16711680" length="230" direction="3"/>
+    <ColorMark x="1269" y="649" color="16711680" offsetX="25" offsetY="10" defaultDirection="9" colorSystem="hex"/>
+    <LengthMark x="773" y="437" color="16711680" length="14" direction="3"/>
+    <LengthMark x="779" y="681" color="16711680" length="14" direction="3"/>
+    <LengthMark x="964" y="695" color="16711680" length="44" direction="3"/>
+    <LengthMark x="681" y="738" color="16711680" length="25" direction="3"/>
+    <ColorMark x="1178" y="1012" color="16711680" offsetX="25" offsetY="10" defaultDirection="9" colorSystem="hex"/>
+    <LengthMark x="660" y="1358" color="16711680" length="86" direction="3"/>
+    <ColorMark x="1381" y="1408" color="16711680" offsetX="25" offsetY="10" defaultDirection="9" colorSystem="hex"/>
+    <LengthMark x="1324" y="1405" color="16711680" length="38" direction="3"/>
+  </Marks>
+</MKM>
