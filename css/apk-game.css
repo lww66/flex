@@ -1,0 +1,239 @@
+img{
+	width:100%;
+	display: block;
+}
+body{
+	background-color: #f5f5f5;
+}
+.container{
+	width:100%;
+	max-width:640px;
+	min-width: 320px;
+	margin:0 auto;
+}
+.header{
+	width:100%;
+	max-width:640px;
+	min-width: 320px;
+	background-color: #fff;
+	position: fixed;
+}
+.header .top{
+	padding:7px 0;
+	display: flex;
+}
+.header .top a.logo{
+	flex-basis:10%;
+	text-align: center;
+	height:33px;
+}
+.header .top .logo{
+	background: url(../images/apk8-logo.png)no-repeat center center;
+	background-size: 16px 21.5px;
+}
+.header .top .menu{
+	background: url(../images/r-icon-pre.png)#f6f6f6 no-repeat left bottom;
+	background-size: 33px auto;
+	border-radius: 50%;
+	width:33px;
+	margin:0 auto;
+}
+.header .top div{
+	flex-basis: 80%;
+	height:33px;
+	position: relative;
+	overflow: hidden;
+}
+.header .top div input{
+	width:100%;
+	height:33px;
+	line-height: 33px;
+	color:#757575;
+	background: #f6f6f6;
+	border-radius: 18px;
+	padding-left:10px;
+	box-sizing: border-box;
+}
+.header .top div button{
+	position: absolute;
+	right:0;
+	top:0;
+	height:33px;
+	width:33px;
+	background-image: url(../images/search.png);
+	background-size: 16px 16px;
+    background-color: #f6f6f6;
+    background-repeat: no-repeat;
+    background-position: 7px 7px;
+	border:none;
+	border-radius: 50%;
+}
+/* 首页栏 */
+.header .bottom{
+	display: flex;
+	padding:15px 0;
+}
+.header .bottom a{
+	flex: 1;
+	text-align: center;
+	font-size: 16px;
+	color:#333;
+}
+.header .bottom .active{
+	color:#45ABFF;
+	position: relative;
+}
+.header .bottom .active span{
+	position: absolute;
+	left:34px;
+	top:30px;
+	height:2px;
+	display: block;
+	width:34%;
+	background: #45ABFF;
+}
+.current-location{
+	margin-top:98px;
+	color:#999;
+	width: 100%;
+	padding:5px 0;
+	display: inline-block;
+}
+.classify{
+	padding:15px 0 0 10px;
+	background: #fff;
+	display: flex;
+	flex-wrap: wrap;
+}
+.classify a{
+	flex-basis: 23%;
+	text-align: center;
+	margin-bottom: 15px;
+	padding: 0 30px;
+	font-size: 14px;
+	box-sizing: border-box;
+	height:34px;
+	margin-right:10px;
+	line-height: 34px;
+	border-radius: 4px;
+	border:1px solid #dbe1ec;
+}
+.classify .active{
+	background: #45ABFF;
+	color:#fff;
+}
+.classify .show{
+	color:#45ABFF;
+}
+/* 最新 */
+.new-game{
+	background: #fff;
+	margin-top:15px;
+}
+.new-game .title{
+	border-bottom: 1px solid #e4e4e4;
+	padding: 15px 0;
+}
+.new-game .title i{
+	float: left;
+	display: inline-block;
+	width:5px;
+	height: 22px;
+	background: #45ABFF;
+	margin-right:12px;
+}
+.new-game .title b{
+	float: left;
+	width: 1px;
+	background: #000;
+	height:22px;
+	margin:0 10px;
+}
+.new-game .title span{
+	font-size: 18px;
+	float: left;
+}
+.new-game .title span:nth-child(2){
+	color: #45ABFF;
+}
+.item-bottom a{
+	display: flex;
+	border-bottom: 1px solid #DBE1EC;
+	padding:10px 0;
+	background: #fff;
+}
+.item-bottom a img{
+	flex-basis: 10%;
+	padding-left:8px;
+	width:65px;
+	height:65px;
+}
+.item-bottom a div{
+	flex-basis: 78%;
+	box-sizing: border-box;
+	padding-left:10px;
+}
+.item-bottom a div p:nth-child(1){
+	font-size: 16px;
+}
+.item-bottom a div p:nth-child(2){
+	color:#999;
+	padding:5px 0;
+	font-size: 13px;
+}
+.item-bottom a div p:nth-child(3){
+	color:#45abff;
+	font-size: 13px;
+}
+.item-bottom a span{
+	flex-basis: 7%;
+}
+.item-bottom a span p{
+	display: block;
+	width:60px;
+	hegiht:30px;
+	background: #45ABFF;
+	border-radius: 4px;
+	margin:auto auto;
+	line-height: 30px;
+	text-align: center;
+	color:#fff;
+	font-size: 15px;
+	margin-top:10px;
+}
+.page{
+	padding:15px 10px;
+	display: flex;
+}
+.page a{
+	flex:1;
+	text-align: center;
+	height: 37px;
+	padding:0 20px;
+	line-height: 37px;
+	font-size: 15px;
+	border:1px solid #ccc;
+	border-radius: 3px;
+}
+.page a:nth-child(3){
+	background: #45ABFF;
+	color:#fff;
+}
+
+.foot{
+	display: flex;
+	padding-top:82px;
+	margin-top:10px;
+	background: #333;
+}
+.foot a{
+	height:42px;
+	flex:1;
+	text-align: center;
+	line-height: 42px;
+	color:#45ABFF;
+	font-size: 14px;
+	box-sizing: border-box;
+	border-top:1px solid #444;
+	border-right:1px solid #444;
+}
