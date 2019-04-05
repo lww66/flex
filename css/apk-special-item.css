@@ -1,0 +1,379 @@
+img{
+	width:100%;
+	display: block;
+}
+body{
+	background-color: #f5f5f5;
+}
+.container{
+	width:100%;
+	max-width:640px;
+	min-width: 320px;
+	margin:0 auto;
+}
+.header{
+	width:100%;
+	max-width:640px;
+	min-width: 320px;
+	background-color: #fff;
+	position: fixed;
+	z-index: 55;
+	box-shadow: 0 3px 3px rgba(0,0,0,.04);
+}
+.header .top{
+	padding:7px 0;
+	display: flex;
+}
+.header .top a.logo{
+	flex-basis:10%;
+	text-align: center;
+	height:33px;
+}
+.header .top .logo{
+	background: url(../images/apk8-logo.png)no-repeat center center;
+	background-size: 16px 21.5px;
+}
+.header .top .menu{
+	background: url(../images/r-icon-pre.png)#f6f6f6 no-repeat left bottom;
+	background-size: 33px auto;
+	border-radius: 50%;
+	width:33px;
+	margin:0 auto;
+}
+.header .top div{
+	flex-basis: 80%;
+	height:33px;
+	position: relative;
+	overflow: hidden;
+}
+.header .top div input{
+	width:100%;
+	height:33px;
+	line-height: 33px;
+	color:#757575;
+	background: #f6f6f6;
+	border-radius: 18px;
+	padding-left:10px;
+	box-sizing: border-box;
+}
+.header .top div button{
+	position: absolute;
+	right:0;
+	top:0;
+	height:33px;
+	width:33px;
+	background-image: url(../images/search.png);
+	background-size: 16px 16px;
+    background-color: #f6f6f6;
+    background-repeat: no-repeat;
+    background-position: 7px 7px;
+	border:none;
+	border-radius: 50%;
+}
+/* 首页栏 */
+.header .bottom{
+	display: flex;
+	padding:15px 0;
+}
+.header .bottom a{
+	flex: 1;
+	text-align: center;
+	font-size: 16px;
+	color:#333;
+}
+.header .bottom .active{
+	color:#45ABFF;
+	position: relative;
+}
+.header .bottom .active span{
+	position: absolute;
+	left:34px;
+	top:30px;
+	height:2px;
+	display: block;
+	width:34%;
+	background: #45ABFF;
+}
+.current-location{
+	margin-top:98px;
+	color:#999;
+	width: 100%;
+	padding:5px 0;
+	display: inline-block;
+}
+
+.banner-wrapper{
+	position: relative;
+}
+.banner-wrapper img{
+	min-height: 160px;
+}
+.banner-wrapper div{
+	position: absolute;
+    bottom: 0px;
+    left: 0;
+    padding-left: 10px;
+    background: linear-gradient(to bottom, transparent 0, black 100%);
+    color: #fff;
+}
+.banner-wrapper div p:nth-child(1){
+	display: block;
+	font-size: 16px;
+    margin-bottom: 10px;
+}
+.banner-wrapper div p:nth-child(2){
+	line-height: 20px;
+    text-indent: 2em;
+    font-size: 12px;
+}
+
+.list-box{
+	margin-top: 10px;
+	display: flex;
+	background: #fff;
+	height: 45px;
+    border-bottom: 1px solid #ddd;
+	position: relative;
+}
+.list-box li{
+	flex:1;
+	text-align: center;
+	line-height: 45px;
+	font-size: 16px;
+	position: relative;
+}
+.list-box .on{
+	color: #45abef;
+    border-bottom: 1px solid #45abef;
+}
+.list-box li.on:before{
+	content: ' ';
+    position: absolute;
+    left: 50%;
+    z-index: 8;
+    margin-left: -8px;
+    border: solid transparent;
+    border-width: 8px;
+	border-bottom-color: #45abef;
+	bottom:0;
+}
+.list-box li.on:after{
+	content: ' ';
+	position: absolute;
+	left: 50%;
+	z-index: 8;
+	margin-left: -8px;
+	border: solid transparent;
+	border-width: 8px;
+	border-bottom-color: #fff;
+    bottom: -2px;
+}
+.item-bottom a{
+	display: flex;
+	border-bottom: 1px solid #DBE1EC;
+	padding:10px 0;
+	background: #fff;
+}
+.item-bottom a img{
+	flex-basis: 10%;
+	padding-left:8px;
+	width:65px;
+	height:65px;
+}
+.item-bottom a div{
+	flex-basis: 78%;
+	box-sizing: border-box;
+	padding-left:10px;
+}
+.item-bottom a div p:nth-child(1){
+	font-size: 16px;
+}
+.item-bottom a div p:nth-child(2){
+	color:#999;
+	padding:5px 0;
+	font-size: 13px;
+}
+.item-bottom a div p:nth-child(3){
+	color:#45abff;
+	font-size: 13px;
+}
+.item-bottom a span{
+	flex-basis: 7%;
+}
+.item-bottom a span p{
+	display: block;
+	width:60px;
+	hegiht:30px;
+	background: #45ABFF;
+	border-radius: 4px;
+	margin:auto auto;
+	line-height: 30px;
+	text-align: center;
+	color:#fff;
+	font-size: 15px;
+	margin-top:10px;
+}
+/* 热门专题 */
+.recommed{
+	display: flex;
+	margin-top:12px;
+	border-top: 1px solid #dbe1ec;
+	background-color: #fff;
+}
+.recommed .title{
+	width:100%;
+	display: block;
+	margin-bottom: 1px;
+	height:50px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #DBE1EC;
+	line-height: 50px;
+}
+.recommed .title>span{
+	float: left;
+	font-size: 18px;
+	border-left: 5px solid #45abff;
+	padding-left:10px;
+	margin-top:15px;
+	line-height: 20px;
+	height:22px;
+}
+.recommed .title a{
+	float: right;
+	color:#999;
+	font-size: 15px;
+	padding-right:10px;
+}
+.recommed .title a.color{
+	color:#45ABFF;
+}
+.recommed .title a i{
+	position: relative;
+    top: 3px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+    background-image: url(../images/color-icon.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0px -302px;
+}
+.topic-list{
+	padding: 10px;
+    overflow: hidden;
+	background: #fff;
+}
+.topic-list li{
+	position: relative;
+    float: left;
+    width: 49%;
+    margin-right: 2%;
+    padding-bottom: 26px;
+	margin-bottom: 15px;
+}
+.topic-list li:nth-child(2),.topic-list li:nth-child(4){
+	margin-right:0;
+}
+.topic-list li a>img{
+	display: block;
+    width: 100%;
+    height: 70px;
+    border-radius: 5px;
+}
+.topic-list li a>div{
+	position: absolute;
+    bottom: 1px;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 10px;
+}
+.topic-list li a>div img{
+	width: 44px;
+    height: 44px;
+    vertical-align: bottom;
+    border: 1px solid #fff;
+    border-radius: 13px;
+	display: inline-block;
+}
+.topic-list li a>div span{
+	vertical-align: 5px;
+    font-size: 14px;
+    color: #333;
+}
+/* 最新更新 */
+.recommed .tab-btn{
+	float: right;
+    height: 17px;
+    line-height: 15px;
+    font-size: 16px;
+	margin-top:15px;
+	margin-right:10px;
+}
+.recommed .tab-btn  .cur{
+	color: #45abff;
+}
+.item-top{
+	width: 100%;
+	display: flex;
+	padding:10px 0;
+	background: #fff;
+}
+.item-top a{
+	flex:1;
+	text-align: center;
+}
+.item-top a img{
+	width: 65px;
+	height:65px;
+	margin:0 auto;
+}
+.item-top a p{
+	padding:6px;
+	font-size: .9vw;
+}
+.item-top a span{
+	display: block;
+	margin:0 auto;
+	width:64px;
+	height:30px;
+	color:#45abff;
+	line-height: 30px;
+	border:1px solid #45abff;
+	border-radius: 3px;
+}
+	
+.loading-more{
+	padding:15px 15px 6px;
+	background: #fff;
+}
+.loading-more a{
+	color: #666;
+    display: block;
+    line-height: 39px;
+    font-size: 16px;
+	line-height: 39px;
+    background: #f6f6f6;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+}
+
+.foot{
+	display: flex;
+	padding-top:82px;
+	margin-top:10px;
+	background: #333;
+}
+.foot a{
+	height:42px;
+	flex:1;
+	text-align: center;
+	line-height: 42px;
+	color:#45ABFF;
+	font-size: 14px;
+	box-sizing: border-box;
+	border-top:1px solid #444;
+	border-right:1px solid #444;
+}
