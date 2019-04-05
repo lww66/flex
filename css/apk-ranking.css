@@ -99,69 +99,64 @@ body{
 	padding:5px 0;
 	display: inline-block;
 }
-/* 分类 */
-.classify{
-	padding:15px 0 0 10px;
-	background: #fff;
+/* 排行分类 */
+.rank{
+	margin-bottom: 10px;
+    border-top: 1px solid #dbe1ec;
+    border-bottom: 1px solid #dbe1ec;
+    background: #fff;
+}
+.rank img{
+	width: 100%;
+    height: 200px;
+}
+.rank ul{
 	display: flex;
-	flex-wrap: wrap;
+    margin-top: -36px;
 }
-.classify a{
-	flex-basis: 23%;
-	text-align: center;
-	margin-bottom: 15px;
-	/* padding: 0 30px; */
-	font-size: .8vw;
-	box-sizing: border-box;
-	height:34px;
-	margin-right:10px;
-	line-height: 34px;
-	border-radius: 4px;
-	border:1px solid #dbe1ec;
+.rank ul li{
+	flex:1;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 20px 20px 0 0;
+    background: #e0f1f4;
+    text-align: center;
+    font-size: 14px;
 }
-.classify .active{
-	background: #45ABFF;
-	color:#fff;
-}
-.classify .show{
-	color:#45ABFF;
-}
-/* 最新 */
-.new-game{
+.rank ul li.on{
 	background: #fff;
-	margin-top:15px;
-}
-.new-game .title{
-	border-bottom: 1px solid #e4e4e4;
-	padding: 15px 0;
-}
-.new-game .title i{
-	float: left;
-	display: inline-block;
-	width:5px;
-	height: 22px;
-	background: #45ABFF;
-	margin-right:12px;
-}
-.new-game .title b{
-	float: left;
-	width: 1px;
-	background: #000;
-	height:22px;
-	margin:0 10px;
-}
-.new-game .title span{
-	font-size: 18px;
-	float: left;
-}
-.new-game .title span:nth-child(2){
-	color: #45ABFF;
+	box-shadow: 0 -2px 2px rgba(0, 143, 219, 0.6);
 }
 .item-bottom a{
 	display: flex;
 	border-bottom: 1px solid #DBE1EC;
-	padding:10px 0;
+	padding:10px 0 10px 40px;
 	background: #fff;
+	position: relative;
+	box-sizing: border-box;
+}
+.item-bottom a .num{
+	position: absolute;
+    left: 10px;
+    top: 28.5px;
+    width: 22px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    font-size: 16px;
+    color: #999;
+    background-size: 100%;
+	padding:0;
+}
+.item-bottom a .one{
+	font-size: 0;
+	background-image: url(../images/list_no_1.png);
+}
+.item-bottom a .two{
+	background-image: url(../images/list_no_2.png);
+}
+.item-bottom a .three{
+	background-image: url(../images/list_no_3.png);
 }
 .item-bottom a img{
 	flex-basis: 10%;
@@ -170,7 +165,7 @@ body{
 	height:65px;
 }
 .item-bottom a div{
-	flex-basis: 78%;
+	flex-basis: 76%;
 	box-sizing: border-box;
 	padding-left:10px;
 }
@@ -202,23 +197,79 @@ body{
 	font-size: 15px;
 	margin-top:10px;
 }
-.page{
-	padding:15px 10px;
+.item-bottom>p{
+	display: block;
+	height: 40px;
+    line-height: 40px;
+    background: #fff;
+    text-align: center;
+    font-size: 14px;
+    color: #45abff;
+}
+/* 热门排行 */
+.hot-rank{
+	background: #fff;
+}
+.recommed{
 	display: flex;
+	margin-top:12px;
+	border-top: 1px solid #dbe1ec;
+	background-color: #fff;
 }
-.page a{
-	flex:1;
-	text-align: center;
-	height: 37px;
-	/* padding:0 20px; */
-	line-height: 37px;
+.recommed .title{
+	width:100%;
+	display: block;
+	margin-bottom: 1px;
+	height:50px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #DBE1EC;
+	line-height: 50px;
+}
+.recommed .title span{
+	float: left;
+	font-size: 18px;
+	border-left: 5px solid #45abff;
+	padding-left:10px;
+	margin-top:15px;
+	line-height: 20px;
+	height:22px;
+}
+.recommed .title a{
+	float: right;
+	color:#999;
 	font-size: 15px;
-	border:1px solid #ccc;
-	border-radius: 3px;
+	padding-right:10px;
 }
-.page a:nth-child(3){
-	background: #45ABFF;
-	color:#fff;
+.recommed .title a.color{
+	color:#45ABFF;
+}
+.recommed .title a i{
+	position: relative;
+    top: 3px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+    background-image: url(../images/color-icon.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0px -302px;
+}
+.hot-rank .type-list{
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px 10px 0;
+}
+.hot-rank .type-list li{
+	flex: 0 0 48%;
+    width: 48%;
+    height: 34px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 34px;
+    border: 1px solid #dbe1ec;
+    border-radius: 8px;
 }
 
 .foot{
