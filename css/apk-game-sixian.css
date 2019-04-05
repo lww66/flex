@@ -1,0 +1,440 @@
+img{
+	width:100%;
+	display: block;
+}
+body{
+	background-color: #f5f5f5;
+}
+.container{
+	width:100%;
+	max-width:640px;
+	min-width: 320px;
+	margin:0 auto;
+}
+.header{
+	width:100%;
+	max-width:640px;
+	min-width: 320px;
+	background-color: #fff;
+	position: fixed;
+	z-index: 55;
+	box-shadow: 0 3px 3px rgba(0,0,0,.04);
+}
+.header .top{
+	padding:7px 0;
+	display: flex;
+}
+.header .top a.logo{
+	flex-basis:10%;
+	text-align: center;
+	height:33px;
+}
+.header .top .logo{
+	background: url(../images/apk8-logo.png)no-repeat center center;
+	background-size: 16px 21.5px;
+}
+.header .top .menu{
+	background: url(../images/r-icon-pre.png)#f6f6f6 no-repeat left bottom;
+	background-size: 33px auto;
+	border-radius: 50%;
+	width:33px;
+	margin:0 auto;
+}
+.header .top div{
+	flex-basis: 80%;
+	height:33px;
+	position: relative;
+	overflow: hidden;
+}
+.header .top div input{
+	width:100%;
+	height:33px;
+	line-height: 33px;
+	color:#757575;
+	background: #f6f6f6;
+	border-radius: 18px;
+	padding-left:10px;
+	box-sizing: border-box;
+}
+.header .top div button{
+	position: absolute;
+	right:0;
+	top:0;
+	height:33px;
+	width:33px;
+	background-image: url(../images/search.png);
+	background-size: 16px 16px;
+    background-color: #f6f6f6;
+    background-repeat: no-repeat;
+    background-position: 7px 7px;
+	border:none;
+	border-radius: 50%;
+}
+/* 首页栏 */
+.header .bottom{
+	display: flex;
+	padding:15px 0;
+}
+.header .bottom a{
+	flex: 1;
+	text-align: center;
+	font-size: 16px;
+	color:#333;
+}
+.header .bottom .active{
+	color:#45ABFF;
+	position: relative;
+}
+.header .bottom .active span{
+	position: absolute;
+	left:34px;
+	top:30px;
+	height:2px;
+	display: block;
+	width:34%;
+	background: #45ABFF;
+}
+.current-location{
+	margin-top:98px;
+	color:#999;
+	width: 100%;
+	padding:5px 0;
+	display: inline-block;
+}
+.game-infro{
+	display: flex;
+	padding:10px;
+	background: #fff;
+}
+.game-infro img{
+	flex: 0 0 64px;
+    width: 64px;
+    height: 64px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.game-infro div{
+	flex:1;
+}
+.game-infro div p:nth-child(1){
+	font-size: 16px;
+	font-weight: 600;
+}
+.game-infro div p:nth-child(2){
+	margin: 5px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    color: #999999;
+}
+.game-infro div p:nth-child(3){
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    color: #45abff;
+}
+/* 下载 */
+.download .content{
+	height: 50px;
+    padding: 15px 10px;
+    border-top: 2px solid #ccc;
+    background: #fff;
+}
+.download .content>p{
+	float: left;
+    line-height: 50px;
+    font-size: 0px;
+    color: #666;
+    position: relative;
+}
+.download .content>p input{
+	position: absolute;
+    width: 101px;
+    height: 16px;
+    left: 0;
+    top: 50%;
+    margin-top: -8px;
+    opacity: 0;
+}
+.download .content>p span{
+	display: inline-block;
+    vertical-align: middle;
+    width: 18px;
+    height: 18px;
+    background: #c6c6c6 url(../images/right2.png) no-repeat;
+    background-size: cover;
+    border-radius: 22px;
+    margin-right: 5px;
+	background-color: #45abff;
+}
+.download .content>p i{
+	vertical-align: middle;
+    font-size: 15px;
+}
+.download .content>a{
+	float: right;
+	display: block;
+	width:50%;
+	height: 50px;
+    line-height: 35px;
+    background: #45abff;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+.download .content>a p:nth-child(1):before{
+	content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url(../images/下载.png) no-repeat;
+    background-size: cover;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.download .content>a p:nth-child(2){
+	width: 100%;
+    text-align: center;
+    font-size: 12px;
+    margin-top: -13px;
+}
+.download .tip{
+	background: #fff5ee;
+    padding: 12px 21px;
+    line-height: 22px;
+    font-size: 14px;
+    color: #ff6c00;
+    text-align: center;
+}
+/* 游戏介绍 */
+.recommed{
+	display: flex;
+	margin-top:12px;
+	border-top: 1px solid #dbe1ec;
+	background-color: #fff;
+}
+.recommed .title{
+	width:100%;
+	display: block;
+	margin-bottom: 1px;
+	height:50px;
+	box-sizing: border-box;
+	border-bottom: 1px solid #DBE1EC;
+	line-height: 50px;
+}
+.recommed .title span{
+	float: left;
+	font-size: 18px;
+	border-left: 5px solid #45abff;
+	padding-left:10px;
+	margin-top:15px;
+	line-height: 20px;
+	height:22px;
+}
+.recommed .title a{
+	float: right;
+	color:#999;
+	font-size: 15px;
+	padding-right:10px;
+}
+.recommed .title a.color{
+	color:#45ABFF;
+}
+.recommed .title a i{
+	position: relative;
+    top: 3px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+    background-image: url(../images/color-icon.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0px -302px;
+}
+/* 游戏介绍 */
+.game-introduce .content ul{
+	padding:10px;
+	font-size: 0;
+	background: #fff;
+}
+.game-introduce .content ul li{
+	display: inline-block;
+    width: 70px;
+    height: 25px;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 25px;
+    border: 1px solid #dbe1ec;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #999999;
+}
+.game-introduce .content ul li.on{
+	border: 1px solid #45abff;
+    background: #45abff;
+    color: #fff;
+}
+.game-introduce .content ul li a{
+	color:#999;
+}
+.game-introduce .content>div{
+	padding:0 10px;
+	font-size: 14px;
+    line-height: 24px;
+	background: #fff;
+	color:#333;
+}
+.game-introduce .game-pic{
+	padding:10px;
+	overflow: hidden;
+	background: #fff;
+}
+.game-introduce .game-pic ul{
+	width:1000%;
+	height:100%;
+}
+.game-introduce .game-pic ul li{
+	height:100%;
+	width:242px;
+	overflow: hidden;
+	margin-right: 10px;
+	float:left;
+}
+.news-list{
+	background: #fff;
+}
+.news-list li{
+	padding: 10px 0;
+    border-bottom: 1px solid #dbe1ec;
+}
+.news-list li a{
+	display: flex;
+}
+.news-list li a img{
+	flex: 0 0 88px;
+    width: 88px;
+    height: 58px;
+    margin: 0 10px;
+}
+.news-list li a div{
+	flex:1;
+}
+.news-list li a div p:nth-child(1){
+	height: 45px;
+    line-height: 20px;
+    font-size: 14px;
+}
+.news-list li a div p:nth-child(2){
+	line-height: 12px;
+    font-size: 12px;
+    color: #999;
+}
+.loading{
+	display: block;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    text-align: center;
+    font-size: 14px;
+    color: #45abff;
+	border-bottom: 1px solid #dbe1ec;
+}
+/* 相关专题 */
+.new-game{
+	background: #fff;
+}
+.new-game .new-list{
+	padding: 0 10px;
+}
+.new-game .new-list li{
+	padding: 10px 0;
+    border-bottom: 1px solid #d9d9d9;
+}
+.new-game .new-list li a{
+	display: flex;
+}
+.new-list li a img{
+	flex: 0 0 150px;
+    width: 150px;
+    height: 70px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px #bebebe;
+}
+.new-list li a>div{
+	flex:1;
+}
+.new-list li a .title1{
+	margin-bottom: 12px;
+    font-size: 18px;
+    color: #2a2a2a;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.new-list li a .content{
+	display: -webkit-box;
+    height: 40px;
+    line-height: 20px;
+    font-size: 14px;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #808080;
+}
+/* 热门游戏 */
+.item-top{
+	width: 100%;
+	display: flex;
+	padding:10px 0;
+	background: #fff;
+}
+.item-top a{
+	flex:1;
+	text-align: center;
+}
+.item-top a img{
+	width: 65px;
+	height:65px;
+	margin:0 auto;
+}
+.item-top a p{
+	padding:6px;
+	font-size: .9vw;
+}
+.item-top a span{
+	display: block;
+	margin:0 auto;
+	width:64px;
+	height:30px;
+	color:#45abff;
+	line-height: 30px;
+	border:1px solid #45abff;
+	border-radius: 3px;
+}
+
+
+
+
+
+
+.foot{
+	display: flex;
+	padding-top:82px;
+	margin-top:10px;
+	background: #333;
+}
+.foot a{
+	height:42px;
+	flex:1;
+	text-align: center;
+	line-height: 42px;
+	color:#45ABFF;
+	font-size: 14px;
+	box-sizing: border-box;
+	border-top:1px solid #444;
+	border-right:1px solid #444;
+}

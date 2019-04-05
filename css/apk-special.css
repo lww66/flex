@@ -159,50 +159,43 @@ body{
 .new-game .title span:nth-child(2){
 	color: #45ABFF;
 }
-.item-bottom a{
+.new-game .new-list{
+	padding: 0 10px;
+}
+.new-game .new-list li{
+	padding: 10px 0;
+    border-bottom: 1px solid #d9d9d9;
+}
+.new-game .new-list li a{
 	display: flex;
-	border-bottom: 1px solid #DBE1EC;
-	padding:10px 0;
-	background: #fff;
 }
-.item-bottom a img{
-	flex-basis: 10%;
-	padding-left:8px;
-	width:65px;
-	height:65px;
+.new-list li a img{
+	flex: 0 0 150px;
+    width: 150px;
+    height: 70px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px #bebebe;
 }
-.item-bottom a div{
-	flex-basis: 78%;
-	box-sizing: border-box;
-	padding-left:10px;
+.new-list li a>div{
+	flex:1;
 }
-.item-bottom a div p:nth-child(1){
-	font-size: 16px;
+.new-list li a .title1{
+	margin-bottom: 12px;
+    font-size: 18px;
+    color: #2a2a2a;
+    overflow: hidden;
+    white-space: nowrap;
 }
-.item-bottom a div p:nth-child(2){
-	color:#999;
-	padding:5px 0;
-	font-size: 13px;
-}
-.item-bottom a div p:nth-child(3){
-	color:#45abff;
-	font-size: 13px;
-}
-.item-bottom a span{
-	flex-basis: 7%;
-}
-.item-bottom a span p{
-	display: block;
-	width:60px;
-	hegiht:30px;
-	background: #45ABFF;
-	border-radius: 4px;
-	margin:auto auto;
-	line-height: 30px;
-	text-align: center;
-	color:#fff;
-	font-size: 15px;
-	margin-top:10px;
+.new-list li a .content{
+	display: -webkit-box;
+    height: 40px;
+    line-height: 20px;
+    font-size: 14px;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #808080;
 }
 .page{
 	padding:15px 10px;
