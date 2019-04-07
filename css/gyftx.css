@@ -1,0 +1,466 @@
+img{
+	width:100%;
+	display: block;
+}
+html,body{
+	height: 100%;
+}
+.container{
+	width:100%;
+	max-width:640px;
+	min-width: 320px;
+	margin:0 auto;
+	/* height: 2000px; */
+	/* background: lightpink; */
+}
+/* 头部 */
+.header{
+	height:46px;
+	background: #fafafa;
+	padding:5px 10px;
+	box-sizing: border-box;
+	display: flex;
+}
+.header .location{
+	width:49px;
+	height:36px;
+	line-height: 36px;
+	position: relative;
+	font-size: 15px;
+}
+.header .location i{
+	position: absolute;
+	display: block;
+	width: 7px;
+    height: 4px;
+    right: 10px;
+    top: 50%;
+    margin-top: -2px;
+    background: url(../images/home_h_icons.png) 0 0 no-repeat;
+    background-size: 36px auto;
+}
+.header .my{
+	width:48px;
+	text-align: center;
+	font-size: 9px;
+}
+.header .my i{
+	display: block;
+	width: 18px;
+    height: 18px;
+    background: url(../images/home_h_icons.png) no-repeat;
+    background-size: 36px auto;
+	background-position: 0 -18px!important;
+    margin: 0 auto;
+    margin-bottom: 3px;
+}
+.header div{
+	flex:1;
+	position: relative;
+}
+.header div input{
+	height: 36px;
+	width:100%;
+	border-radius: 3px;
+    background: #e7e7eb;
+	padding-left: 30px;
+	box-sizing: border-box;
+	font-size: 13px;
+    color: #56565c;
+}
+.header div i{
+	display: block;
+	position: absolute;
+	background: url(../images/home_h_icons.png) 0 -4px no-repeat;
+    background-size: 36px auto;
+	width: 14px;
+    height: 14px;
+	left:10px;
+	top:11px;
+}
+.header div span{
+	position: absolute;
+	display: block;
+	top:11px;
+	right:10px;
+	width: 20px;
+    height: 12px;
+    background: url(../images/pic_gg2.png) no-repeat;
+    background-size: 100%;
+}
+
+.ad{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.ad div{
+	width: 300%;
+	overflow: hidden;
+}
+.ad img{
+	width:33.33333333%;
+	display: inline-block;
+}
+.ad span{
+	position: absolute;
+	top:8px;
+	right:0;
+	background: rgba(0,0,0,.3);
+	color:#fff;
+}
+
+.footprint{
+	padding: 15px 20px 0;
+    line-height: 15px;
+}
+.footprint em{
+	position: relative;
+    float: left;
+    padding-left: 18px;
+    margin-right: 4px;
+	font-size: 13px;
+    color: #83868f;
+}
+.footprint em:before{
+	content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -8px;
+    width: 12px;
+    height: 14px;
+    background: url(../images/home_zj.png) no-repeat;
+    background-size: 100% auto;
+}
+.footprint a{
+	position: relative;
+    float: left;
+    padding-right: 9px;
+    margin-right: 9px;
+	font-size: 13px;
+	color: #83868f;
+}
+.footprint .pre:before{
+	content: '';
+    position: absolute;
+    right: 0;
+    top: 1px;
+    width: 1px;
+    height: 13px;
+    background: #cccfd8;
+    -webkit-transform: skew(-20deg);
+    transform: skew(-20deg);
+}
+/* 菜单 */
+.menu-box{
+	padding-top: 15px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.menu-box a{
+	width:25%;
+	padding:15px 0;
+}
+.menu-box a i{
+	display: block;
+	width: 4.5rem;
+    height: 4.5rem;
+	background-image: url(../images/home_newyear2.png);
+	background-size: 22.5rem auto;
+	margin:0 auto;
+}
+.menu-box a .menu1{
+	background-position: 0 0;
+}
+.menu-box a .menu2{
+	background-position: -4.5rem 0;
+}
+.menu-box a .menu3{
+	background-position: -9rem 0;
+}
+.menu-box a .menu4{
+	background-position: -13.5rem 0;
+}
+.menu-box a .menu5{
+	background-position: -4.5rem -9rem;
+}
+.menu-box a .menu6{
+	background-size: 22rem auto !important;
+	background: url(../images/home_nav1.png) 0 0 no-repeat;
+	background-position: -17.5rem -4.3rem;
+	
+}
+.menu-box a .menu7{
+	background-position: 0rem -4.5rem;
+}
+.menu-box a .menu8{
+	background-position: -4.5rem -4.5rem;
+}
+
+.menu-box a p{
+	font-size: 15px;
+	color:#343538;
+	margin-top:.625rem;
+	text-align: center;
+}
+.zhishiqi{
+	padding:10px 0 20px;
+	display: flex;
+	justify-content: center;
+}
+.zhishiqi i{
+	display: block;
+	width:6px;
+	height: 6px;
+	background: #fafafa;
+	border-radius: 50%;
+	margin:0 3px;
+}
+.zhishiqi .cur{
+	background: orange;
+}
+/* 房产头条 */
+.fc-news{
+	padding:12px 0;
+	display: flex;
+}
+.fc-news div:nth-child(1){
+	width: 45px;
+	height:45px;
+	padding:0 10px 0 17px;
+	border-right: 1px solid #f3f3f6;
+}
+.fc-news div:nth-child(2){
+	padding-left: 30px;
+	overflow: hidden;
+	position: relative;
+	flex: 1;
+}
+.fc-news div:nth-child(2) ul{
+	height:45px;
+	position: absolute;
+	top:0;
+}
+.fc-news div:nth-child(2) ul li{
+	list-style: disc;
+	line-height: 21px;
+	font-weight: 600;
+	font-size: 13px;
+}
+/* 优惠 */
+.discount{
+	padding:20px 18px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.discount a{
+	width:46.4%;
+	padding:18px 10px;
+	background: #fafafa;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 4px;
+}
+.discount a img{
+	width:45px;
+	height: 45px;
+	border-radius: 50%;
+}
+.discount a h3{
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 6px;
+}
+
+.menu-list{
+	display: flex;
+	padding:20px 0;
+}
+.menu-list a{
+	flex: 1;
+	padding:16px 0;
+	text-align: center;
+}
+.menu-list a i{
+	display: block;
+	width:30px;
+	height:30px;
+	margin: 0 auto;
+    background: url(../images/home_tools.png) no-repeat;
+    background-size: auto 30px;
+	margin-bottom: 5px;
+}
+.menu-list a .icon1{
+	background-position: 0 0;
+}
+.menu-list a .icon2{
+	background-position: -30px 0;
+}
+.menu-list a .icon3{
+	background-position: -60px 0;
+}
+.menu-list a .icon4{
+	background-position: -90px 0;
+}
+.menu-list a .icon5{
+	background-position: -180px 0;
+}
+.menu-list a .icon6{
+	background-position: -120px 0;
+}
+.menu-list a .icon7{
+	background-position: -150px 0;
+}
+.menu-list a .icon8{
+	background-position: -240px 0;
+}
+/* 新房 二手房 */
+.new-house{
+	background: #fff;
+}
+.new-house:before{
+	content: '';
+    display: block;
+    height: 8px;
+	background: linear-gradient(rgba(247,247,247,1) 0,rgba(255,255,255,1) 100%);
+}
+.new-house .house-tab{
+	display: flex;
+	padding: 8px 8px 0;
+    margin-bottom: 4px;
+}
+.new-house .house-tab span{
+	flex: 1;
+	text-align: center;
+	line-height: 44px;
+	font-size: 16px;
+	position: relative;
+	color: #56565c;
+}
+.new-house .house-tab span.cur{
+	font-weight: bold;
+    color: #343538;
+}
+.new-house .house-tab span.cur:after{
+	content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -10px;
+    width: 20px;
+    height: 3px;
+    background: #ff5350;
+    border-radius: 2px;
+}
+.new-house .items a{
+	display: flex;
+	padding:20px;
+	height:84px;
+	border-bottom: 1px solid #f3f3f6;
+}
+.new-house .items a img{
+	padding-right: 16px;
+	width:112px;
+	height:84px;
+}
+.new-house .items a div{
+	flex: 1;
+	height:84px;
+}
+.new-house .items a div h3{
+	line-height: 22px;
+    font-size: 16px;
+    color: #343538;
+    font-weight: bold;
+}
+.new-house .items a div p{
+	display: flex;
+	justify-content: space-between;
+	height:16px;
+	line-height: 16px;
+	color:#56565c;
+	font-size: 11px;
+	margin-top:6px;
+}
+.new-house .items a div p span:nth-child(2){
+	font-size: 12px;
+    color: #ff5350;
+    font-weight: 600;
+}
+.new-house .items a div li{
+	float: left;
+	line-height: 12px;
+    padding: 2px 6px 1px;
+    border: 0;
+    background: #f4f6f9;
+    margin-right: 4px;
+    border-radius: 1px;
+	margin-top:6px;
+}
+.new-house .items a div li:nth-child(1){
+	color: #ff6050;
+    background: #fff2f0;
+}
+
+.loading{
+	background: #fafafa;
+	text-align: center;
+	height:40px;
+	line-height: 40px;
+	color:#ccc;
+}
+footer{
+	padding-bottom: 20px;
+}
+footer .nav{
+	display: flex;
+	text-align: center;
+	height:40px;
+}
+footer .nav a{
+	flex: 1;
+	padding: 13px 0;
+    width: 50px;
+    font-size: 13px;
+    line-height: 14px;
+    color: #82838B;
+}
+footer .nav a span{
+	display: block;
+	border-right: 1px solid #eeeeee;
+}
+footer .belong{
+	position: relative;
+	height: 16px;
+    line-height: 16px;
+	color: #82838b;
+	text-align: center;
+}
+footer .belong p{
+	position: absolute;
+	z-index: 5;
+	padding:0 12px;
+	background: #fff;
+	left:50%;
+	top:50%;
+	-webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+footer .belong .line{
+	width: 100%;
+    height: 1px;
+    background: #F8F8FA;
+    position: absolute;
+    top: 8px;
+    left: 0px;
+   z-index: 2;
+}
+footer>p{
+	color: #B2B2BA;
+    font-size: 10px;
+    line-height: 16px;
+    margin: 6px 0;
+	text-align: center;
+}
