@@ -1,0 +1,178 @@
+img{
+	width:100%;
+	display: block;
+}
+html,body{
+	height: 100%;
+	background: #f8f8f8;
+}
+.container{
+	width:100%;
+	max-width:640px;
+	min-width: 320px;
+	margin:0 auto;
+	/* height: 2000px; */
+	/* background: lightpink; */
+}
+/* 头部 */
+.header{
+	height:46px;
+	background: #fafafa;
+	padding:5px 0px;
+	box-sizing: border-box;
+	display: flex;
+	background: #f6f6f6;
+}
+.header .index{
+	width:40px;
+	height:36px;
+}
+.header .index i{
+	display: block;
+	width:32px;
+	height: 32px;
+	margin: 2px auto;
+	background: url(../images/header_icons1.png) 0 0 no-repeat;
+    background-size: 128px auto;
+}
+.header div{
+	flex: 1;
+	text-align: center;
+	font-size: 16px;
+    color: #0c0d0e;
+	line-height: 36px;
+}
+.header .menu{
+	width: 40px;
+	height:36px;
+}
+.header .menu i{
+	display: block;
+	width:20px;
+	height: 20px;
+	margin: 8px auto;
+	background: url(../images/header_icons1.png) 0 0 no-repeat;
+	background-size: 118px auto;
+	background-position: -32px -32px;
+}
+
+.search-box{
+	padding: 10px 0px;
+	display: flex;
+}
+.search-box div{
+	width: 42px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border-left: 1px solid #f2f2f2;
+    border-radius: 0 3px 3px 0;
+    background: #f3f5f7;
+}
+.search-box div i{
+	margin-top: 9px;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(../images/sea_btn.png) 0 0 no-repeat;
+    background-size: 15px auto;
+}
+.search-box input{
+	flex:1;
+	padding-left: 8px;
+	font-size: 13px;
+	height:34px;
+	color: #343538;
+}
+
+.main-city h3{
+	line-height: 1;
+    font-size: 14px;
+    color: #83868f;
+    padding: 20px 0 14px 0;
+}
+.main-city .xuanze{
+	display: flex;
+	background: #fff;
+	height: 36px;
+}
+.main-city .xuanze .icon{
+	width:36px;
+	height: 36px;
+}
+.main-city .xuanze .icon i{
+	display: inline-block;
+	width: 11px;
+    height: 16px;
+	margin:11px 17px;
+	background: url(../images/city_icon1.png) no-repeat;
+    background-size: 100%;
+}
+.main-city .xuanze .city{
+	flex: 1;
+	height: 36px;
+	line-height: 36px;
+	font-size: 14px;
+    color: #565c67;
+}
+.main-city .xuanze .refresh{
+	width: 36px;
+    height: 36px;
+}
+.main-city .xuanze .refresh i{
+	display: block;
+    width: 100%;
+    height: 100%;
+    background: url(../images/city_loading.png) center center no-repeat;
+    background-size: 18px;
+}
+.main-city .lately,.main-city .hot-city{
+	margin: -5px 0;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.main-city .lately a,.main-city .hot-city a{
+	float: left;
+	width: 32%;
+    margin: 5px 0;
+	line-height: 36px;
+    background: #fff;
+    text-align: center;
+    color: #565c67;
+    border-radius: 2px;
+}
+
+.main-city .order{
+	border-radius: 2px;
+    background: #fff;
+    padding: 10px 0px 10px 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.main-city .order a{
+	width: 16%;
+	display: block;
+    font-size: 14px;
+    padding: 10px 0;
+    text-align: center;
+    color: #565c67;
+    line-height: 1;
+}
+
+.main-city .city-box{
+	border-radius: 2px;
+	background: #fff;
+	padding:10px 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+.main-city .city-box a{
+	display: block;
+    font-size: 14px;
+    padding: 10px 0;
+    text-align: center;
+    color: #565c67;
+    line-height: 1;
+	width: 33.33%;
+}
